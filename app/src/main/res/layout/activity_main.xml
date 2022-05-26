@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:elevation="2sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texto"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtTexto"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_margin="16dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="@string/enviar" />
+
+    </LinearLayout>
+
+    <!--Tamanho da letra -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da letra"
+        android:textSize="18sp"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/skbLetra"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:max="80"
+            android:min="10" />
+
+        <TextView
+            android:id="@+id/txtTamanho"
+            android:layout_width="41dp"
+            android:layout_height="31dp"
+            android:text="80sp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- Checkbox -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estilo"
+        android:textSize="18sp"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:id="@+id/chbNegrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:minHeight="48dp"
+        android:text="@string/negrito"
+        android:onClick="definirEstilo"/>
+
+    <CheckBox
+        android:id="@+id/chbItalico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:minHeight="48dp"
+        android:text="@string/italico"
+        android:onClick="definirEstilo"/>
+
+    <CheckBox
+        android:id="@+id/chbMaiusculas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:minHeight="48dp"
+        android:text="@string/maiusculas"
+        android:onClick="definirEstilo"/>
+
+    <!-- Radio Button -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cor da Letra"
+        android:textSize="18sp"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rdgCores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbVermelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="@string/vermelho"
+                android:onClick="alterarCorTexto" />
+
+            <RadioButton
+                android:id="@+id/rdbVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="@string/verde"
+                android:onClick="alterarCorTexto" />
+
+            <RadioButton
+                android:id="@+id/rdbAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="@string/azul"
+                android:onClick="alterarCorTexto" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

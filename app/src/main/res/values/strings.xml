@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Teste de Estilos</string>
+    <string name="texto">Texto</string>
+    <string name="vermelho">Vermelho</string>
+    <string name="verde">Verde</string>
+    <string name="azul">Azul</string>
+    <string name="maiusculas">Maiúscula</string>
+    <string name="italico">Itálico</string>
+    <string name="negrito">Negrito</string>
+    <string name="enviar">Enviar</string>
+</resources>
